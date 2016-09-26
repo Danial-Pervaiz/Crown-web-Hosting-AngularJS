@@ -19,4 +19,7 @@ Crown web hosting website created with Angular JS, HTML5, CSS3, jQuery and Twitt
  <li>
   HTML5
  </li>
+  <li>
+ Twitter Bootstrap
+ </li>
 </ul>
