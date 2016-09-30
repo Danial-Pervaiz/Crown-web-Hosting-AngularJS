@@ -24,7 +24,8 @@
 
 @defaultThemeColor:#0096ff;
 @defaultThemeColorDark:#1e88e5;
-@lato:'Lato', sans-serif;
+@lato:   'Lato', sans-serif;
+@ubuntu: 'Ubuntu', sans-serif;
 
 /* Default Styles */
 
@@ -202,5 +203,29 @@ h1,h2,h3,h4,h5,h6,p{
 	    padding-top: 9px;
 	    position: absolute;
 	    z-index: 1;
+    }
+    span{
+	    font-size: 14px;
+	    line-height: 26px;
+	    color: #999999;
+	    font-family:@lato;
+	    padding-left: 18px;
+    }
+    button{
+	    height: 53px;
+	    width: 137px;
+	    background-color: #1e88e5;
+	    color: #fff;
+	    border: none;
+	    border-radius: 3px;
+	    margin-left: 18px;
+	    margin-top: 10px;
+	    font-family: 'Ubuntu', sans-serif;
+	    font-weight: 500;
+	    font-size: 15px;
+	    .transitions;
+	    &:hover{
+	    	background-color:@defaultThemeColor;
+	    }
     }
 }
