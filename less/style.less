@@ -39,6 +39,7 @@ h1,h2,h3,h4,h5,h6,p{
 	margin:0px;
 }
 
+
 /* Navigation Section */
 
 .smallNavigation{
@@ -204,13 +205,33 @@ h1,h2,h3,h4,h5,h6,p{
 	    position: absolute;
 	    z-index: 1;
     }
-    span{
+    .forgetPassword{
 	    font-size: 14px;
 	    line-height: 26px;
 	    color: #999999;
 	    font-family:@lato;
 	    padding-left: 18px;
     }
+    .error{
+	    padding:0px!important;
+	    color:red!important;
+	    font-family:'Lato';
+	    letter-spacing: 1px;
+	    margin:0px;
+	    padding-left: 18px!important;
+	    position: relative;
+    	bottom: 20px;
+	}
+	.errorPassword{
+		padding:0px!important;
+	    color:red!important;
+	    font-family:'Lato';
+	    letter-spacing: 1px;
+	    margin:0px;
+	    padding-left: 18px!important;
+    	position: relative;
+    	bottom: 29px;
+	}
     button{
 	    height: 53px;
 	    width: 137px;
@@ -228,4 +249,7 @@ h1,h2,h3,h4,h5,h6,p{
 	    	background-color:@defaultThemeColor;
 	    }
     }
+}
+.loginFormModified {
+  height: 500px;
 }

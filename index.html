@@ -35,13 +35,13 @@
       </ul>
       <ul class="login">
         <li>
-          <a href="#">
+          <a href="#" id="login">
             <i class="fa fa-lock" aria-hidden="true"></i>
             Login
           </a>
         </li>
       </ul>
-      <span class="language">
+      <span class="language" id="Lang">
         <a href="#">
            ENG 
         </a>
@@ -71,18 +71,30 @@
       </ul>
     </nav>
     <!-- login Section -->
-    <section class="loginForm">
-      <form>
+    <section class="loginForm" ng-app="LoginForm">
+      <form name="loginForm" novalidate ng-controller="mainController as ctrl">
         <div class="form-group">
           <i class="fa fa-user" aria-hidden="true"></i>
-          <input type="text" class="form-control" placeholder="Username">
+          <input name="username" type="text" class="form-control" placeholder="Username" ng-model="username" required>
+          <span class="error" ng-show="loginForm.username.$dirty && loginForm.username.$invalid">
+            <span ng-show="loginForm.username.$error.required">
+              username is required
+            </span>
+          </span>
         </div>
         <div class="form-group">
           <i class="fa fa-lock" aria-hidden="true"></i>
-          <input type="password" class="form-control" placeholder="Password">
+          <input name="password" type="password" class="form-control" placeholder="Password" ng-model="password" required>
+          <span class="errorPassword" ng-show="loginForm.password.$dirty && loginForm.password.$invalid">
+            <span ng-show="loginForm.password.$error.required">
+              password is required
+            </span>
+          </span>
         </div>
-        <span>Forget Password? <a href="#">Click Here</a></span>
-        <button type="submit" disabled>
+        <span class="forgetPassword">Forget Password? <a href="#">Click Here</a></span>
+        <button type="submit" ng-disabled="loginForm.username.$dirty && loginForm.username.$invalid 
+                                           || loginForm.password.$dirty && loginForm.password.$invalid" 
+                                           ng-click="submit();">
           Login Account
         </button>
       </form>
