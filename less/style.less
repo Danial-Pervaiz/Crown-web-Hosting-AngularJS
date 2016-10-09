@@ -253,3 +253,69 @@ h1,h2,h3,h4,h5,h6,p{
 .loginFormModified {
   height: 500px;
 }
+
+/* ========   Main Navigation  ======== */
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+    height: 91px;
+    width: 100%;
+    border-radius: 0px;
+    .container-fluid {
+	    padding-right: 268px;
+	    padding-left: 103px;
+	}
+	.navbar-brand {
+	    float: left;
+	    height: 50px;
+	    padding: 15px 15px;
+	    font-size: 28px;
+	    line-height: 20px;
+	    padding-top: 41px;
+	    color: #000;
+	    font-family: 'Raleway';
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    cursor:pointer;
+	    &:hover{
+	    	color:#000;
+	    }
+	    span{
+	    	color:@defaultThemeColor;
+	    }
+	}
+	.navbar-nav > li > a {
+	    color: #79848d!important;
+	    font-size: 13px;
+	    line-height: 90px;
+	    text-transform: uppercase;
+	    display: block;
+	    padding: 0 18px;
+	    font-weight: 600;
+	    font-family: 'Lato';
+	    padding-left: 21px;
+    	padding-right: 36px;
+	}
+	.account{
+		float: right;
+	    position: absolute;
+	    right: 0px;
+	    height: 52px;
+	    width: 143px;
+	    background-color:@defaultThemeColorDark;
+	    margin-top: 19px;
+	    margin-right: 103px;
+	    border-radius: 4px;
+	    text-align: center;
+	    padding-top: 17px;
+	    font-family: 'Lato';
+	    color: #fff;
+	    font-weight: 700;
+	    .transitions;
+	    &:hover{
+	    	cursor:pointer;
+	    	background-color:@defaultThemeColor;
+	    }
+	}
+}
