@@ -259,7 +259,7 @@ h1,h2,h3,h4,h5,h6,p{
 .navbar-default {
     background-color: #fff;
     border-color: #fff;
-    height: 91px;
+    height: 70px;
     width: 100%;
     border-radius: 0px;
     .container-fluid {
@@ -284,6 +284,18 @@ h1,h2,h3,h4,h5,h6,p{
 	    span{
 	    	color:@defaultThemeColor;
 	    }
+	}
+	.dropdown-menu > li > a{
+		color: #79848d!important;
+	    font-size: 13px;
+	    line-height: 90px;
+	    text-transform: uppercase;
+	    display: block;
+	    padding: 0 18px;
+	    font-weight: 600;
+	    font-family: 'Lato';
+	    padding-left: 21px;
+    	padding-right: 36px;
 	}
 	.navbar-nav > li > a {
 	    color: #79848d!important;
@@ -320,6 +332,19 @@ h1,h2,h3,h4,h5,h6,p{
 	}
 }
 
+/* Header section */
+.header{
+	height:629px;
+	width:100%;
+	background-image:url('../assets/header/main.jpg');
+	background-position:100%;
+	background-attachment:fixed;
+	.overlay{
+		height:629px;
+		width:100%;
+		background-color:rgba(0,150,255,0.9);
+	}
+}
 
 
 /* ================  Media Queries for Devices  ================ */
