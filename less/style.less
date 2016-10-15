@@ -365,6 +365,48 @@ h1,h2,h3,h4,h5,h6,p{
 		height:629px;
 		width:100%;
 		background-color:rgba(0,150,255,0.9);
+		.itemMainSwitcher{
+			height: 364px;
+		    width: 360px;
+		    margin-left: 15px;
+		    margin-top: 129px;
+		    padding:0px;
+		    ul{
+		    	list-style:none;
+		    	li:nth-child(2){
+		    		border-top-left-radius:0px;
+		    		border-top-right-radius:6px;
+		    		border-left:0px;
+		    	}
+		    	li:nth-child(3){
+		    		border-top-left-radius:0px;
+		    		border-bottom-left-radius:6px;
+		    		border-bottom:1px!important;
+		    	}
+		    	li:nth-child(4){
+		    		border-top-left-radius:0px;
+		    		border-bottom-right-radius:6px;
+		    		border-left:0px;
+		    		border-bottom:1px!important;
+		    	}
+		    	li{
+		    		cursor:pointer;
+    		        height: 183px;
+				    width: 180px;
+				    background-color:#2e97f2;
+				    padding: 0px;
+				    border-bottom:0px!important;
+				    margin: 0px;
+				    border: 1px solid rgb(74, 177, 250);;
+				    border-top-left-radius:6px;
+				    float:left;
+				    .transitions;
+				    &:hover{
+				    	background-color:@defaultThemeColorDark;
+				    }
+		    	}
+		    }
+		}
 	}
 }
 
