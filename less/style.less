@@ -381,13 +381,13 @@ h1,h2,h3,h4,h5,h6,p{
 		    	li:nth-child(3){
 		    		border-top-left-radius:0px;
 		    		border-bottom-left-radius:6px;
-		    		border-bottom:1px!important;
+		    		border-bottom:1px solid rgb(74, 177, 250)!important;
 		    	}
 		    	li:nth-child(4){
 		    		border-top-left-radius:0px;
 		    		border-bottom-right-radius:6px;
 		    		border-left:0px;
-		    		border-bottom:1px!important;
+		    		border-bottom:1px solid rgb(74, 177, 250)!important;
 		    	}
 		    	li{
 		    		cursor:pointer;
@@ -403,6 +403,28 @@ h1,h2,h3,h4,h5,h6,p{
 				    .transitions;
 				    &:hover{
 				    	background-color:@defaultThemeColorDark;
+				    }
+				    a{
+				    	color: #fff;
+    					font-weight: 700;
+    					font-size:14px;
+    					font-family:@lato;
+    					text-align:center;
+    					text-transform:uppercase;
+					    margin: 0 auto;
+    					display: table;
+    					&:hover{
+    						text-decoration:none;
+    					}
+				    	i{
+			    		    font-size: 52px;
+						    text-align: center;
+						    float: none;
+						    display: table;
+						    margin: 0 auto;
+						    color: #fff;
+						    padding-top: 53px;
+				    	}
 				    }
 		    	}
 		    }
