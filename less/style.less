@@ -535,6 +535,54 @@ h1,h2,h3,h4,h5,h6,p{
 	        padding-top: 61px;
     		padding-left: 15px;
 		}
+		ul{
+			list-style:none;
+			margin-left: 16px;
+		    margin-top: 8px;
+			li{
+				float:left;
+			    padding-right: 24px;
+				input[type="checkbox"]{
+					background-color:#fff;
+				    height: 17px;
+    				width: 17px;
+				}
+				span{
+				    color: #c3c9d5;
+				    font-size: 16px;
+				    font-weight: 400;
+				    position: relative;
+				    bottom: 3px;
+				    left: 10px;
+				}
+			}
+		}
+	}
+	.itemSearchBar{
+		margin-top:70px;
+		.form-control{
+			width: 416px;
+		    float: left;
+		    border-radius: 0px;
+		    height: 58px;
+		    font-family:@lato;
+	        padding-left: 29px;
+		}
+		button{
+		    height: 58px;
+		    width: 205px;
+		    background-color: #0096ff;
+		    color: #fff;
+		    font-family: 'Lato';
+		    font-size: 16px;
+		    border: none;
+		    text-transform: capitalize;
+		    font-weight: 600;
+		    .transitions;
+		    &:hover{
+		    	background-color:@defaultThemeColorDark;
+		    }
+		}
 	}
 }
 
