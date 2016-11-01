@@ -18,3 +18,19 @@ $('#activator li a').on('click', function(){
 		$('#price').html('$6.30/<span>mo</span>');
 	}
 });
+
+// frequently asked questions 
+
+$('.itemToggle').on('click', function(){
+	$(this).next('.contentItemToggle',this).slideToggle().siblings('.contentItemToggle').slideUp();
+	$(this).children('i').addClass('fa-minus').end().siblings('.itemToggle').children('i').removeClass('fa-minus');
+	$(this).css({
+		'background-color':'#1e88e5',
+	}).children('h6, i').css({
+		'color':'#fff'
+	}).end().siblings().css({
+		'background-color':'#fff'
+	}).children('h6, i').css({
+		'color':'#2e2e2e'
+	});
+});
