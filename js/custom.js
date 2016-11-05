@@ -21,6 +21,8 @@ $('#activator li a').on('click', function(){
 
 // frequently asked questions 
 
+$('.contentItemToggle:nth-child(2)').show();
+
 $('.itemToggle').on('click', function(){
 	$(this).next('.contentItemToggle',this).slideToggle().siblings('.contentItemToggle').slideUp();
 	$(this).children('i').addClass('fa-minus').end().siblings('.itemToggle').children('i').removeClass('fa-minus');

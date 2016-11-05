@@ -780,7 +780,7 @@ h1,h2,h3,h4,h5,h6,p{
 	    padding-left: 98px;
 	    padding-top: 22px;
     }
-     button{
+ 	button{
     	line-height: 50px;
 	    font-size: 15px;
 	    font-family: Ubuntu, sans-serif;
@@ -1021,6 +1021,7 @@ h1,h2,h3,h4,h5,h6,p{
 		    position: absolute;
 		    margin-top: 160px;
 		    right: 0px;
+		    z-index:99999;
 		    .left{
 	    	    height: 20px;
 	    	    cursor:pointer;
@@ -1053,7 +1054,155 @@ h1,h2,h3,h4,h5,h6,p{
 	}
 }
 
+/* get started section */
+.getStartedSection{
+	height:199px;
+	width:100%;
+	background-color:@defaultThemeColor;	
+	h1{
+		color: #fff;
+	    font-weight: bold;
+	    font-size: 30px;
+	    line-height: 44px;
+	    font-family:'Lato';
+	    float:left;
+	    text-transform:uppercase;
+        padding-top: 78px;
+    	letter-spacing: 1px;
+	}
+	button{
+    	line-height: 50px;
+	    font-size: 15px;
+	    font-family: Ubuntu, sans-serif;
+	    font-weight: 500;
+	    display: inline-block;
+	    color: rgb(255, 255, 255);
+	    border-radius: 3px;   
+	    background-color: rgb(32, 39, 54);
+	    border: none;
+       	margin-left: 204px;
+	    margin-top: 75px;
+	    width: 176px;
+	    .transitions;
+	    &:hover{
+	    	background-color:rgb(41, 51, 72);
+	    }
+    }
+}
 
+/* Footer section */
+.footer{
+	height:509px;
+	width:100%;
+	.itemLogoFooter{
+		padding:0px;
+		h1{
+			font-size: 28px;
+		    line-height: 20px;
+		    color: #000;
+		    font-family: Raleway;
+		    font-weight: 700;
+		    text-transform: uppercase;
+		    cursor: pointer;
+	        padding-top: 141px;
+    		padding-left: 14px;
+    		span{
+    			color:@defaultThemeColor;
+    		}
+		}
+		p{
+			font-size: 14px;
+    		line-height: 26px;
+    		color: #999999;
+    		font-family: 'Lato', sans-serif;
+		    padding-top: 34px;
+		    padding-left: 13px;
+		    padding-right: 65px;
+		}
+		h6{
+			color: #222222;
+			font-family: 'Ubuntu',sans-serif;
+    		font-weight: 700;
+		    font-size: 14px;
+			line-height: 26px;
+		    padding-left: 15px;
+    		padding-top: 21px;
+		}
+		.form-control{
+		    border-color: #0096ff;
+		    width: 180px;
+		    margin-left: 15px;
+		    float: left;
+		    margin-top: 14px;
+		    height: 42px;
+	        border-top-right-radius: 0px;
+    	    color: #222222;	border-bottom-right-radius: 0px;
+		}
+		button{
+		    height: 42px;
+		    width: 100px;
+		    background-color: #0096ff;
+		    border: none;
+		    border-radius: 4px;
+		    margin-top: 14px;
+		    font-size: 14px;
+		    font-family: 'lato',sans-serif;
+		    line-height: 30px;
+		    color: #fff;
+	        border-top-left-radius: 0px;
+    		border-bottom-left-radius: 0px;
+		}
+	}
+	.itemLinks{
+		h3{
+	        color: #222;
+		    font-size: 16px;
+		    line-height: 20px;
+		    font-family: Lato;
+		    text-align: center;
+		    padding-top: 120px;
+		    font-weight: 900;
+		}
+		ul{
+			list-style:none;
+		    margin-left: 100px;
+    		margin-top: 44px;
+			li{
+			    font-size: 14px;
+			    line-height: 32px;
+			    color: #333;
+		        font-weight: 700;
+		        font-family: 'Lato', sans-serif;
+			}
+		}
+	}
+	.itemSocialItem{
+		h3{
+	        color: #222;
+		    font-size: 16px;
+		    line-height: 20px;
+		    font-family: Lato;
+		    text-align: center;
+		    padding-top: 120px;
+		    font-weight: 900;
+		}
+		ul{
+			list-style:none;
+		    margin-left: 108px;
+    		margin-top: 44px;
+			li{
+			    font-size: 14px;
+			    line-height: 32px;
+			    color: #333;
+		        font-weight: 400;
+		        font-family: 'Lato', sans-serif;
+		        i{
+		        	padding-right:20px;
+		        }
+			}
+		}	
+	}
+}
 
 
 /* ================  Media Queries for Devices  ================ */
@@ -1171,6 +1320,43 @@ h1,h2,h3,h4,h5,h6,p{
 	    border-left: none;
 	    border: none;
 	}
+	/* toggle section */
+	.frequentlyAskedQuestions {
+    	height: 1400px;
+    	padding:20px;
+    }
+    .frequentlyAskedQuestions .itemFrequentlyAskedQuestions h1{
+    	text-align:center;
+    }
+    .frequentlyAskedQuestions .itemFrequentlyAskedQuestions .MainItemToggle .itemToggle{
+    	width:100%;
+    }
+    .frequentlyAskedQuestions .itemFrequentlyAskedQuestions .MainItemToggle .contentItemToggle{
+    	height: 191px;
+    	width: 100%;
+    }
+    .testimonials h1{
+    	text-align:center;
+    }
+    .testimonials .singleItemTestimonial{
+    	width:100%;
+    	margin-left:0px;
+    	height: 398px;
+    }
+    .getStartedSection {
+    	height: 350px;
+    }
+    .getStartedSection h1{
+    	text-align:center;
+    	float:none;
+    }
+    .getStartedSection button{
+        margin: 100px auto;
+	    float: none;
+	    display: table;
+	    position: relative;
+	    top: 21px;
+    }
 }
 
 /* Tablet screens */
@@ -1335,6 +1521,42 @@ h1,h2,h3,h4,h5,h6,p{
 	    border-left: none;
 	    border: none;
 	}
+	/* toggle section */
+	.frequentlyAskedQuestions {
+    	height: 1400px;
+    	padding:20px;
+    }
+    .frequentlyAskedQuestions .itemFrequentlyAskedQuestions h1{
+    	text-align:center;
+    }
+    .frequentlyAskedQuestions .itemFrequentlyAskedQuestions .MainItemToggle .itemToggle{
+    	width:100%;
+    }
+    .frequentlyAskedQuestions .itemFrequentlyAskedQuestions .MainItemToggle .contentItemToggle{
+    	height: 191px;
+    	width: 100%;
+    }
+    .testimonials h1{
+    	text-align:center;
+    }
+    .testimonials .singleItemTestimonial{
+    	width:100%;
+    	margin-left:0px;
+    	height: 398px;
+    }
+    .getStartedSection {
+    	height: 350px;
+    }
+    .getStartedSection h1{
+    	text-align:center;
+    }
+    .getStartedSection button{
+        margin: 100px auto;
+	    float: none;
+	    display: table;
+	    position: relative;
+	    top: 21px;
+    }
 }
 
 /* Mobile Screens */
@@ -1506,6 +1728,42 @@ h1,h2,h3,h4,h5,h6,p{
 	    border-left: none;
 	    border: none;
 	}
+	/* toggle section */
+	.frequentlyAskedQuestions {
+    	height: 1400px;
+    	padding:20px;
+    }
+    .frequentlyAskedQuestions .itemFrequentlyAskedQuestions h1{
+    	text-align:center;
+    }
+    .frequentlyAskedQuestions .itemFrequentlyAskedQuestions .MainItemToggle .itemToggle{
+    	width:100%;
+    }
+    .frequentlyAskedQuestions .itemFrequentlyAskedQuestions .MainItemToggle .contentItemToggle{
+    	height: 191px;
+    	width: 100%;
+    }
+    .testimonials h1{
+    	text-align:center;
+    }
+    .testimonials .singleItemTestimonial{
+    	width:100%;
+    	margin-left:0px;
+    	height: 398px;
+    }
+    .getStartedSection {
+    	height: 350px;
+    }
+    .getStartedSection h1{
+    	text-align:center;
+    }
+    .getStartedSection button{
+        margin: 100px auto;
+	    float: none;
+	    display: table;
+	    position: relative;
+	    top: 21px;
+    }
 }
 
 /* small mobile screens */
@@ -1670,4 +1928,40 @@ h1,h2,h3,h4,h5,h6,p{
 	    border-left: none;
 	    border: none;
 	}
+	/* toggle section */
+	.frequentlyAskedQuestions {
+    	height: 1400px;
+    	padding:20px;
+    }
+    .frequentlyAskedQuestions .itemFrequentlyAskedQuestions h1{
+    	text-align:center;
+    }
+    .frequentlyAskedQuestions .itemFrequentlyAskedQuestions .MainItemToggle .itemToggle{
+    	width:100%;
+    }
+    .frequentlyAskedQuestions .itemFrequentlyAskedQuestions .MainItemToggle .contentItemToggle{
+    	height: 191px;
+    	width: 100%;
+    }
+    .testimonials h1{
+    	text-align:center;
+    }
+    .testimonials .singleItemTestimonial{
+    	width:100%;
+    	margin-left:0px;
+    	height: 398px;
+    }
+    .getStartedSection {
+    	height: 350px;
+    }
+    .getStartedSection h1{
+    	text-align:center;
+    }
+    .getStartedSection button{
+        margin: 100px auto;
+	    float: none;
+	    display: table;
+	    position: relative;
+	    top: 21px;
+    }
 }
