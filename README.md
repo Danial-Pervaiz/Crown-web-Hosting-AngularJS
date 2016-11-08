@@ -25,5 +25,5 @@ Crown web hosting website created with Angular JS, HTML5, CSS3, jQuery and Twitt
 </ul>
 <h1>Default Layout</h1>
 <img src="http://danielpervaiz.com/img/35.png"/>
-<h2> Mobile Layout </h2>
-<img src="http://danielpervaiz.com/img/34.png"/>
+<h1> Mobile Layout </h1>
+<img src="http://danielpervaiz.com/img/34.png" style="margin:0 auto; float:none; display:table;"/>
